@@ -321,7 +321,7 @@ input, select {
 
 .form-div {
   width: 80%;
-  height: 760px;
+  height: 900px;
   background-color: #c2a8a5;
   margin: 0 auto;
 }
@@ -359,7 +359,12 @@ input, select {
   border-style: none;
   margin-top: 10px;
 }
-
+.sns_icon{
+  margin-top: 50px;
+  font-size: 3em;
+  padding: 10px;
+  color: #e0dddd;
+}
 footer {
   margin-top: 100px;
   height: 200px;
