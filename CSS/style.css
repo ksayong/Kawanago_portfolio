@@ -254,7 +254,7 @@ input, select {
   letter-spacing: 0.2em;
   font-weight: lighter;
   color: #af8383;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .section-text {
@@ -268,7 +268,6 @@ input, select {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .section-ｐ {
   font-size: 13px;
   width: 100%;
@@ -280,11 +279,26 @@ input, select {
 }
 
 .section-img {
-  width: 40%;
+  width: 15%;
+  margin: 30px;
 }
 
 .skils {
-  margin-top: 20px;
+  margin-top: 15px;
+}
+.skil_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skil_list p{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #f0f0f0;
+}
+.skil_list h2{
+  font-size: 2.1em;
+  color: #f0f0f0;
+  line-height: 2;
+
 }
 
 .skils-h1 {
@@ -300,6 +314,16 @@ input, select {
   height: 750px;
   background-color: #c2a8a5;
   margin: 50px auto;
+}
+.skils_block{
+  padding:10px;
+  height: 200px;
+  margin: 30px auto;
+  width: 30%;
+  line-height: 2;
+}
+.skils_block img{
+  width: 30%;
 }
 
 .works-back {
@@ -377,3 +401,6 @@ footer {
   float: left;
 }
 /*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width:560px){
+}
