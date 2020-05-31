@@ -403,4 +403,8 @@ footer {
 /*# sourceMappingURL=style.css.map */
 
 @media screen and (max-width:560px){
+  .myname {
+    font-size: 60px;
+    line-height: 1.5;
+}
 }
