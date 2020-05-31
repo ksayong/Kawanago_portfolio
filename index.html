@@ -104,14 +104,13 @@
                         <h1 class="section-h1 contact-h1">Contact</h1>
                         <h2 class="section-h2 contact-h2">お問い合わせ</h2>
                     </div>
-                    <form action="#" method="post" class="form-inner">
+                    <form action="#" method="post" class="form-inner" netlify>
                         <p class=form-p>お名前（必須) <i class="fas fa-pen-nib"></i></p>
                         <input type="text" name="name" class="form-input">
                         <p class=form-p>メールアドレス <i class="far fa-envelope"></i></p>
-                        <input type="text" name="mail" class="form-input">
+                        <input type="email" name="mail" class="form-input">
                         <p class=form-p>お問合せ内容 <i class="fas fa-comment-dots"></i></p>
-                        <textarea name="comment" cols="30" rows="5" class="form-input">
-                        </textarea>
+                        <textarea name="message" rows="5" class="form-input"></textarea>
                         <div class="sendButton">
                             <input type="submit" value="送信" class="submit-button" style="cursor:pointer">
                         </div>
