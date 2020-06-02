@@ -342,7 +342,6 @@ input, select {
   color: #7a6a6a;
   margin-bottom: 0;
 }
-
 .form-div {
   width: 80%;
   height: 900px;
@@ -369,8 +368,10 @@ input, select {
   font-size: 1.3em;
   color: #aaa;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   width: 65%;
+  display: block;
 }
 
 .submit-button {
