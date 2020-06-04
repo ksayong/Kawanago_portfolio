@@ -1,9 +1,8 @@
-<script>
 $(function(){
     // #で始まるアンカーをクリックした場合に処理
-    $('a[href^=#]').click(function() {
+    $('a[href^="#"]').click(function() {
     // スクロールの速度
-    var speed = 400; // ミリ秒
+    var speed = 600; // ミリ秒
     // アンカーの値取得
     var href= $(this).attr("href");
     // 移動先を取得
@@ -15,4 +14,3 @@ $(function(){
     return false;
     })
 });
-</script>
