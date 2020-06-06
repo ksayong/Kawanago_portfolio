@@ -132,17 +132,6 @@ input, select {
   vertical-align: middle;
 }
 
-button,
-input[type="submit"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding: 0;
-    border: none;
-    outline: none;
-    background: transparent;
-}
-
 .header {
   width: 100%;
   background-color: #a7dae1;
@@ -327,7 +316,7 @@ input[type="submit"] {
   padding: 80px 0;
 }
 .skils_block{
-  margin-bottom: 50px;
+  margin: 0 0 50px calc(10% / 4);
   width: 30%;
   line-height: 2;
 }
@@ -357,12 +346,12 @@ input[type="submit"] {
 margin-bottom: 70px;
 font-size: 2em;
 }
-.works_list a {
+.works_thumb {
   width: 30%;
 }
 .works_p {
   font-family: 'Noto Sans JP', sans-serif;
-  color: #7a6a6a;
+  color: #723d3d;
   width: 50%;
   line-height: 2;
   text-align: left;
@@ -370,9 +359,9 @@ font-size: 2em;
   font-size: 1em;
 }
 .works_link {
-  color: #ffffff;
+  color:#812c2c;
   font-size: 1.2em;
-  width: 100%;
+  width: 30;
 }
 
 .contact-h1 {
@@ -399,7 +388,7 @@ font-size: 2em;
 }
 
 .form-p {
-  color: #e0dddd;
+  color: white;
   font-size: 18px;
 }
 
@@ -415,21 +404,30 @@ font-size: 2em;
   display: block;
 }
 
-.submit-button {
-  width: 20%;
-  height: 45px;
-  padding: 5px 10px;
+.submit_button {
+  padding: 10px 100px;
+  margin: 5%;
   background-color: #dbd7d7ad;
-  color: #fff;
-  font-size: 15px;
+  color: white;
+  font-size: 1.2em;
   border-style: none;
-  margin-top: 10px;
 }
-.sns_icon{
-  margin-top: 50px;
+.submit_button:hover {
+  opacity: 0.7;
+}
+.sns_section{
+  margin: 0 auto;
   font-size: 3em;
-  padding: 10px;
   color: #e0dddd;
+  display: flex;
+}
+
+.sns_icon {
+  font-size: 0.6em;
+}
+
+.sns_link:hover {
+  opacity: 0.7;
 }
 footer {
   margin-top: 100px;
@@ -511,9 +509,13 @@ footer {
 margin-bottom: 70px;
 font-size: 1em;
 }
-.works_list a {
+.works_thumb {
   width: 50%;
 }
+.works_link {
+  width: 80%;
+}
+
 .works_p {
   font-family: 'Noto Sans JP', sans-serif;
   color: #7a6a6a;
@@ -521,9 +523,6 @@ font-size: 1em;
   line-height: 2;
   margin:10% auto;
   font-size: 0.9em;
-}
-.works_link {
-  display: none;
 }
 
 .contact {

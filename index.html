@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css" type="text/css" media="all" />
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>kawanago-sayo Portfolio</title>
 </head>
@@ -98,12 +99,14 @@
                 <div class="works-back">
                     <h2 class="section_h2 works_list_h2">WEBアプリ「Maihama Weather」</h2>
                     <div class="works_list">
-                        <a href="https://maihama-weather.netlify.app/" target="_blank"><img src="images/MaihamaWeather_icon.png" alt="アプリキャプチャ"></a>
-                        <div class="works_p">
-                            <p>東京ディズニーリゾートの天気情報を表示します。<br>現在の気温と天気によって変わるアイコン、ショーやパレードの実施に関係する日没時間と風の強さを表示させることで、ユーザーが知りたい情報が１度で見れるようにデザインしました。背景色を空の色に見立て、時間によって変動するようにJavaScriptを使用しました。</p>
-                            <p>使用言語：HTML,CSS,JavaScript,Vue.js,jQuery</p>
-                            <p><a href="https://maihama-weather.netlify.app/" target="_blank" class="menu-a works_link"><i class="fas fa-caret-left"></i>  WEBアプリはこちら</a></p>
-                        </div>
+                            <a href="https://maihama-weather.netlify.app/" target="_blank" class="works_thumb">
+                                <img src="images/MaihamaWeather_icon.png" alt="アプリキャプチャ">
+                            </a>
+                            <div class="works_p">
+                                <p>東京ディズニーリゾートの天気情報を表示します。<br>現在の気温と天気によって変わるアイコン、ショーやパレードの実施に関係する日没時間と風の強さを表示させることで、ユーザーが知りたい情報が１度で見れるようにデザインしました。背景色を空の色に見立て、時間によって変動するようにJavaScriptを使用しました。</p>
+                                <p>使用言語：HTML,CSS,JavaScript,Vue.js,jQuery</p>
+                                <p><a href="https://maihama-weather.netlify.app/" target="_blank" class="menu-a works_link"><i class="fas fa-caret-right"></i> WEBアプリはこちら</a></p>
+                            </div>
                     </div>
                 </div>
             </section>
@@ -123,12 +126,17 @@
                         <label class=form-p>お問合せ内容 <i class="fas fa-comment-dots"></i>
                             <textarea name="message" rows="5" class="form-input"></textarea>
                         </label>
-                        <div class="sendButton">
-                            <input type="submit" value="送信" class="submit-button" style="cursor:pointer">
+                        <div class="submit_section">
+                            <input type="submit" value="送信" class="submit_button" style="cursor:pointer">
                         </div>
-                        <div class="sns_icon">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-instagram"></i>
+                        <div class="sns_section">
+                            <a href="https://twitter.com/sai__yon" class="sns_link">
+                                <p class="sns_icon"><i class="fab fa-twitter faa-shake animated-hover"></i> Twitter</p>
+                            </a>
+                            <!-- <a href="">
+                                <p class="sns_icon"><i class="fab fa-instagram faa-shake animated-hover"></i></p>
+                                <p class="sns_title">instagram</p>
+                            </a> -->
                         </div>
                     </form>
                 </div>
