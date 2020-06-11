@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Cutive+Mono|La+Belle+Aurore&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css" type="text/css" media="all" />
@@ -18,15 +18,32 @@
 
 <body>
     <div class="wrap">
-        <header class="header">
-            <nav class="head_nav">
+        <header class="header" id="home">
+            <nav class="head_nav_pc">
                 <ul class="menu_ul">
                     <li class="menu-li"><a href="#home" class="menu-a">HOME</a></li>
                     <li class="menu-li"><a href="#about" class="menu-a">ABOUT</a></li>
-                    <li class="menu-li"><a href="#skils" class="menu-a">SKILS</href="#"a>
-                    </li>
+                    <li class="menu-li"><a href="#skills" class="menu-a">SKILLS</a></li>
                     <li class="menu-li"><a href="#works" class="menu-a">WORKS</a></li>
                     <li class="menu-li"><a href="#contact" class="menu-a">CONTACT</a></li>
+                </ul>
+            </nav>
+            <!--MobileMenu-->
+            <button type="button" class="menu_mobile_open js_menu_mobile_toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="head_nav_mobile js_head_nav_mobile">
+                <div class="menu_mobile_inner">
+                    <button type="button" class="menu_mobile_close js_menu_mobile_toggle">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul class="menu_ul_mobile">
+                    <li class="menu_li_mobile"><a href="#home" class="list_a_mobile">HOME</a></li>
+                    <li class="menu_li_mobile"><a href="#about" class="list_a_mobile">ABOUT</a></li>
+                    <li class="menu_li_mobile"><a href="#skills" class="list_a_mobile">SKILLS</a></li>
+                    <li class="menu_li_mobile"><a href="#works" class="list_a_mobile">WORKS</a></li>
+                    <li class="menu_li_mobile"><a href="#contact" class="list_a_mobile">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="top_title">
@@ -37,53 +54,53 @@
             </div>
         </header>
         <div class="section_wrrap">
-            <section class="about">
+            <section class="about" id="about">
                 <div class="section-title-inner">
-                    <h1 class="section_h1" id="about">About me</h1>
+                    <h1 class="section_h1">About me</h1>
                     <h2 class="section_h2">自己紹介</h2>
                 </div>
                 <img src="images/icon_1.jpg" alt="" class="section-img">
                 <div class="section-text">
                     <h2 class="section_h2">かわなご さよ</h2>
-                    <p class="section-ｐ">1994年うまれ　埼玉県出身<br>
+                    <p class="section_p">1994年うまれ　埼玉県出身<br>
                         テーマパークでの接客を6年間経験後,職業訓練校にてJavaを中心に半年間学習しました。<br>
                         見た目を作る部分の楽しさや奥深さに惹かれ<br>
                         フロントエンドに強いエンジニアになるため勉強しています。</p>
                 </div>
             </section>
-            <section class="skils" id="skils">
-                <div class="skils_back">
-                    <div class="section-title-inner skils-innner">
-                        <h1 class="section_h1 skils-h1">Skills</h1>
-                        <h2 class="section_h2 skils-h2">できること</h2>
+            <section class="skills" id="skills">
+                <div class="skills_back">
+                    <div class="section-title-inner skills-innner">
+                        <h1 class="section_h1 skills-h1">Skills</h1>
+                        <h2 class="section_h2 skills-h2">できること</h2>
                     </div>
-                    <div class="skil_list">
-                        <div class="skils_block">
+                    <div class="skill_list">
+                        <div class="skills_block">
                             <h2>Java</h2>
                             <img src="images/Wavy_line.png" alt="Wavy_line">
                             <p>メソッドやクラス、基本的な構文を<br>理解している。</p>
                         </div>
-                        <div class="skils_block">
+                        <div class="skills_block">
                             <h2>HTML/CSS</h2>
                             <img src="images/Wavy_line.png" alt="Wavy_line">
                             <p>自分で考えたデザインを実際に構築することができる。<br>レスポンシブ対応をすることができる。</p>
                         </div>
-                        <div class="skils_block">
+                        <div class="skills_block">
                             <h2>JavaScript</h2>
                             <img src="images/Wavy_line.png" alt="Wavy_line">
                             <p>HTML/CSSで実装したページに<br>動的な仕組みを実装できる。</p>
                         </div>
-                        <div class="skils_block">
+                        <div class="skills_block">
                             <h2>Vue.js</h2>
                             <img src="images/Wavy_line.png" alt="Wavy_line">
                             <p>APIを利用した機能をVueを利用して実装できる。</p>
                         </div>
-                        <div class="skils_block">
+                        <div class="skills_block">
                             <h2>Git</h2>
                             <img src="images/Wavy_line.png" alt="Wavy_line">
                             <p>コミット〜プッシュまでの<br>一通りを理解している。<br>GitHubとBacklogの実務経験あり。</p>
                         </div>
-                        <div class="skils_block">
+                        <div class="skills_block">
                             <h2>SQL</h2>
                             <img src="images/Wavy_line.png" alt="Wavy_line">
                             <p>データベースの基礎知識と<br>SQL文の基本構文を理解している。</p>
@@ -133,10 +150,6 @@
                             <a href="https://twitter.com/sai__yon" class="sns_link">
                                 <p class="sns_icon"><i class="fab fa-twitter faa-shake animated-hover"></i> Twitter</p>
                             </a>
-                            <!-- <a href="">
-                                <p class="sns_icon"><i class="fab fa-instagram faa-shake animated-hover"></i></p>
-                                <p class="sns_title">instagram</p>
-                            </a> -->
                         </div>
                     </form>
                 </div>
