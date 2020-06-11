@@ -1,16 +1,17 @@
 $(function(){
-    // #で始まるアンカーをクリックした場合に処理
-    $('a[href^="#"]').click(function() {
-    // スクロールの速度
-    var speed = 600; // ミリ秒
-    // アンカーの値取得
-    var href= $(this).attr("href");
-    // 移動先を取得
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    // 移動先を数値で取得
-    var position = target.offset().top;
+
     // スムーススクロール
-    $('body,html').animate({scrollTop:position}, speed, 'swing');
-    return false;
-    })
+    $('a[href^="#"]').click(function() {
+        var speed = 600;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        $('.js_head_nav_mobile').toggleClass('menu_mobile_show');
+    });
+
+    // ハンバーガーメニュー
+    $('.js_menu_mobile_toggle').on('click', function(){
+        $('.js_head_nav_mobile').toggleClass('menu_mobile_show');
+    });
 });
