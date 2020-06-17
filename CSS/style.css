@@ -339,10 +339,9 @@ input, select {
 }
 
 .skills_back {
-  width: 80%;
   background-color: #c2a8a5;
   margin: 0 auto;
-  padding: 80px 0;
+  padding:10% 0;
 }
 .skills_block{
   margin: 0 0 50px calc(10% / 4);
@@ -360,7 +359,6 @@ input, select {
 
 .works-back {
   width: 80%;
-  background-color: #e6e4e1;
   margin: 0 auto;
   margin-bottom: 200px;
   padding: 6% 0;
@@ -410,10 +408,13 @@ font-size: 2em;
   margin-bottom: 0;
 }
 
-.form-div {
+.form_back {
+  background-color: #c2a8a5;
+}
+
+.form_section {
   width: 80%;
   padding: 5% 0;
-  background-color: #c2a8a5;
   margin: 0 auto;
 }
 
@@ -471,7 +472,6 @@ font-size: 2em;
 }
 
 footer {
-  margin-top: 100px;
   background-color: #a7dae1;
   padding: 5% 0;
   position: relative;
@@ -570,10 +570,6 @@ footer {
   margin-bottom: 15%;
 }
 
-.skills_back{
-  width: 100%;
-}
-
 .skill_list p{
   font-size: 0.8em;
 }
@@ -585,7 +581,6 @@ footer {
 }
 
 .skills_block{
-  width: 100%;
   margin: 5% auto;
 }
 
@@ -594,19 +589,13 @@ footer {
 }
 
 .works-back {
-  width: 100%;
   margin-bottom: 0;
-  background-color: white;
 }
 
 .works_list{
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
-}
-
-.works-back img {
-  width: 100%;
 }
 
 .works_list_h2{
