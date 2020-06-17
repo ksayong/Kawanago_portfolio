@@ -374,6 +374,11 @@ input, select {
   width: 100%;
 }
 
+.works-back img:hover {
+  opacity: 0.7;
+}
+
+
 .works_list_h2{
 margin-bottom: 70px;
 font-size: 2em;
@@ -489,6 +494,10 @@ footer {
 }
 
 .head_nav_pc{
+  display: none;
+}
+
+.top_icon {
   display: none;
 }
 
