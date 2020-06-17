@@ -202,6 +202,18 @@ input, select {
   font-size: 20px;
 }
 
+.top_icon {
+  color: #745757;
+  font-size: 2em;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
 .top_title {
   padding:18% 0;
   display: -webkit-box;
