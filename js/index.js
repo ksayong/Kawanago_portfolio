@@ -25,6 +25,25 @@ $(function(){
             topBtn.fadeOut();
         }
     });
+    //フッター手前でアイコンを止める
+    $(window).scroll(function(){
+        var height = $(document).height();
+        var position = $(window).height() + $(window).scrollTop();
+        var footer = $("footer").height();
+
+        if(height - position < footer) {
+            topBtn.css({
+                position:"absolute",
+                top: -100
+            });
+        } else {
+            topBtn.css({
+                position:"fixed",
+                top:"auto"
+            });
+        }
+    });
+    //スクロールしてTopに戻る
     topBtn.click(function(){
         $('body,html').animate({
             scrollTop:0
