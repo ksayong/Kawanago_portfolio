@@ -455,6 +455,7 @@ font-size: 2em;
   color: white;
   font-size: 1.2em;
   border-style: none;
+  -webkit-appearance: none;
 }
 
 .submit_button:hover {
