@@ -565,7 +565,7 @@ footer {
   width: 40%;
 }
 
-.section-ｐ{
+.section_p{
   font-size: 0.7em;
   width: 80%;
   margin: 0 auto;
@@ -592,6 +592,7 @@ footer {
 
 .skills_block{
   margin: 5% auto;
+  width: 100%;
 }
 
 .skills_block img {
@@ -614,7 +615,7 @@ font-size: 1em;
 }
 
 .works_thumb {
-  width: 50%;
+  width: 60%;
 }
 
 .works_link {
@@ -624,7 +625,7 @@ font-size: 1em;
 .works_p {
   font-family: 'Noto Sans JP', sans-serif;
   color: #7a6a6a;
-  width: 60%;
+  width: 80%;
   line-height: 2;
   margin:10% auto;
   font-size: 0.9em;
