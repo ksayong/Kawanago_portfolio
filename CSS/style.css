@@ -212,7 +212,8 @@ input, select {
   right: 0;
   bottom: 0;
   width:50px;
-	height: 50px;
+  height: 50px;
+  line-height: 50px;
   border-radius: 50%;
   background-color:#af8383;
   color: white;
@@ -282,7 +283,6 @@ input, select {
 
 .section-text {
   margin-top: 50px;
-  margin-bottom: 150px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
@@ -291,6 +291,7 @@ input, select {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .section_p {
   font-size: 13px;
   width: 100%;
@@ -307,11 +308,7 @@ input, select {
 }
 
 .about{
-  padding-top: 100px;
-}
-
-.skills {
-  margin-top: 15px;
+  padding: 170px 0;
 }
 
 .skill_list {
