@@ -371,6 +371,7 @@ input, select {
 }
 
 .works-back img {
+  padding: 30px;
   width: 100%;
 }
 
@@ -637,7 +638,7 @@ footer {
   }
 
 .works_thumb {
-  width: 60%;
+  width: 100%;
 }
 
 .works_link {
