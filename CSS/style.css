@@ -737,3 +737,17 @@ footer {
 }
 
 }
+
+.my-name path {
+  fill: none;
+  fill-opacity: 0;
+  stroke: #745757;
+  stroke-width: 10px;
+  transition: fill-opacity 1s;
+}
+
+.my-name.fill path {
+  fill: #745757;
+  fill-opacity: 1;
+  stroke: none;
+}

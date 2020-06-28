@@ -1,5 +1,13 @@
 $(function(){
 
+    new Vivus('my-name', {
+        duration: 100,
+        start: 'autostart',
+        pathTimingFunction: Vivus.EASE_OUT
+    }, function(obj) {
+        obj.el.classList.add('fill');
+    });
+
     // スムーススクロール
     $('a[href^="#"]').click(function() {
         var speed = 600;
