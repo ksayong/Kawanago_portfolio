@@ -25,6 +25,7 @@ $(function(){
             topBtn.fadeOut();
         }
     });
+
     //フッター手前でアイコンを止める
     $(window).scroll(function(){
         var height = $(document).height();
@@ -43,12 +44,46 @@ $(function(){
             });
         }
     });
+
     //スクロールしてTopに戻る
     topBtn.click(function(){
         $('body,html').animate({
             scrollTop:0
         }, 700);
         return false;
-    })
+    });
 
+    //スクロールアクション
+    const obj = $(".scroll-animation-obj");
+    const hopIn = $(".scroll-animation-hop");
+    $(window).on('scroll',function(){
+        obj.each(function(){
+            const objPos = $(this).offset().top;
+            const scroll = $(window).scrollTop();
+            const windowH = $(window).height();
+            if(scroll > objPos - windowH){
+            $(this).css({
+                'opacity': '1'
+            });
+            } else {
+            $(this).css({
+                'opacity': '0'
+            });
+            }
+        });
+        hopIn.each(function(){
+            const objPos = $(this).offset().top;
+            const scroll = $(window).scrollTop();
+            const windowH = $(window).height();
+            if(scroll > objPos - windowH){
+                $(this).css({
+                    'transform': 'translate(0,0)'
+                });
+            } else {
+                $(this).css({
+                    'transform': 'translate(0,60px)'
+                });
+            }
+        });
+    });
 });
