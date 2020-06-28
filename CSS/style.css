@@ -149,7 +149,7 @@ input, select {
 .scallop-down_blue{
   height:100px;
   width:100%;
-  background: -webkit-gradient(radial, 50% 0, 50, 50% 0, 50, from(#a7dae1), color-stop(0.49, #a7dae1), color-stop(0.51, #fff), to(white));
+  background: -webkit-gradient(radial, 50% 0, 40, 50% 0, 50, from(#a7dae1), color-stop(0.49, #a7dae1), color-stop(0.51, #fff), to(white));
   background-size: 80px 100%;
 }
 
