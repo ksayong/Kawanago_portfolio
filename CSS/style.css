@@ -268,13 +268,40 @@ input, select {
   padding-bottom: 30px;
 }
 
-.myname {
-  font-size: 9em;
-  width: 100%;
-  margin-bottom: 70px;
-  color: #745757;
-  font-weight: 100;
-  font-family: AC-Fifindrel;
+.my-name {
+  max-width: 100%;
+}
+
+.my-name path {
+  fill: none;
+  fill-opacity: 0;
+  stroke: #745757;
+  stroke-width: 10px;
+  transition: fill-opacity 1s;
+}
+
+.my-name.fill path {
+  fill: #745757;
+  fill-opacity: 1;
+  stroke: none;
+}
+
+.my-name {
+  max-width: 100%;
+}
+
+.my-name path {
+  fill: none;
+  fill-opacity: 0;
+  stroke: #745757;
+  stroke-width: 10px;
+  transition: fill-opacity 1s;
+}
+
+.my-name.fill path {
+  fill: #745757;
+  fill-opacity: 1;
+  stroke: none;
 }
 
 .occupation {
@@ -585,20 +612,6 @@ footer {
 
 .my-name {
   max-width: 100%;
-}
-
-.my-name path {
-  fill: none;
-  fill-opacity: 0;
-  stroke: #745757;
-  stroke-width: 10px;
-  transition: fill-opacity 1s;
-}
-
-.my-name.fill path {
-  fill: #745757;
-  fill-opacity: 1;
-  stroke: none;
 }
 
 .section-img {
